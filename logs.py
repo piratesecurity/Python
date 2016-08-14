@@ -20,4 +20,6 @@ for files in os.listdir(logsdir):                       # Find all the files in 
 		files1=files+"."+strftime("%Y-%m-%d")+".zip"    # Create the Variable files1, this is the files in the directory, then we add a suffix with the date and the zip extension
 		os.chdir(logsdir)                               # Change directory to the logsdir
 		os.system(zip_program + " " +  files1 +" "+ files)  # Zip the logs into dated zip files for each server. - 1.1
-		os.remove(files)                                    # Remove the original log files
+		os.remove(files)  
+
+print 45                                  # Remove the original log files
